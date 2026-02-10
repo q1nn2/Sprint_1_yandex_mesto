@@ -1,36 +1,38 @@
-﻿# Sprint 1 — Test cases run (Mesto)
+﻿# Mesto — Sprint 1 (Manual QA)
 
-Ветка содержит результаты прогона тест-кейсов за 1 спринт: **Passed / Failed / Blocked** и привязку к **ID баг-репортов** (ID сохранены как в Google Sheets: `SP1_TK*`).
+Репозиторий с результатами ручного тестирования веб-сервиса **Mesto**: прогон тест-кейсов, дефекты, выводы по готовым требованиям.
 
 ## Ссылки
-- ✅ Google Sheets — Test cases: [открыть](https://docs.google.com/spreadsheets/d/13nzquQs9HWhjU0buZW-GD-v3z_A_sof28SgfXInC4kY/edit?gid=220888493#gid=220888493)
-- 🐞 Google Sheets — Bug reports: [открыть](https://docs.google.com/spreadsheets/d/1yY5eNi8DMjGEhlcMzAAcT_nKohSqs_---3R_lMUR-n4/edit?gid=1186534874#gid=1186534874)
+- Реализация: https://code.s3.yandex.net/qa/files/mesto/index.html
+- Требования: https://praktikum.notion.site/Mesto-9f2cfaa209734d1f8cfa0c0db3d3049f
+
+## Артефакты
+
+| Артефакт | Что внутри | Ссылка |
+|---|---|---|
+| ✅ Тест-кейсы (прогон) | Статусы **Passed/Failed/Blocked** | ✅ [Google Sheets — Test cases](https://docs.google.com/spreadsheets/d/13nzquQs9HWhjU0buZW-GD-v3z_A_sof28SgfXInC4kY/edit?gid=220888493#gid=220888493) |
+| 🐞 Баг-репорты | Шаги, ER/AR, окружение | 🐞 [Google Sheets — Bug reports](https://docs.google.com/spreadsheets/d/1yY5eNi8DMjGEhlcMzAAcT_nKohSqs_---3R_lMUR-n4/edit?gid=1186534874#gid=1186534874) |
+| 📁 Testcases (GitHub) | Структурированная версия тест-кейсов в репозитории | 📁 [sprint1-testcases](https://github.com/q1nn2/SPRINT1_YANDEX_MESTO/blob/main/sprint1-testcases) |
+| 📁 Bugreports (GitHub) | Структурированная версия баг-репортов в репозитории | 📁 [sprint1-bugreports](https://github.com/q1nn2/SPRINT1_YANDEX_MESTO/blob/main/sprint1-bugreports) |
+
+
+## Окружение
+- OS: Windows 11 Pro 21H2
+- Browser: Google Chrome 144.0.7559.133
 
 ## Итоги прогона
-📊 Total: **17** • 🟢 Passed: **8** • 🔴 Failed: **7** • 🔵 Blocked: **2** • ✅ Rate: **53% (8/15)**
+📊 Total: **17** • 🟢 Passed: **8** • 🔴 Failed: **7** • 🔵 Blocked: **2** • ✅ Rate: **53%**
 
----
 
-## Прогон тест-кейсов (кликабельно)
 
-> В колонке “ID баг-репорта” стоят плейсхолдеры ссылок — замени `REPLACE_LINK_SP1_TK*` на свои ссылки.
+## Ключевые дефекты (High)
+- SP1_TK2 — данные профиля не сохраняются после нажатия “Сохранить”
+- SP1_TK3 — поле “Занятие” пустое при открытии редактирования
+- SP1_TK4 — поле “Имя” пустое при открытии редактирования
 
-| № | Тест-кейс | Статус | ID баг-репорта / причина |
-|---:|---|---|---|
-| 1 | [TK-01 — Открытие окна редактирования профиля](testcases/TK-01.md) | 🟢 Passed | — |
-| 2 | [TK-02 — Обновление полей "Имя" и "Занятие"](testcases/TK-02.md) | 🔴 Failed | [SP1_TK2](REPLACE_LINK_SP1_TK2) |
-| 3 | [TK-03 — Отображается текст из блока пользователя в поле "Занятие"](testcases/TK-03.md) | 🔴 Failed | [SP1_TK3](REPLACE_LINK_SP1_TK3) |
-| 4 | [TK-04 — Отображается текст из блока пользователя в поле "Имя"](testcases/TK-04.md) | 🔴 Failed | [SP1_TK4](REPLACE_LINK_SP1_TK4) |
-| 5 | [TK-05 — Закрытие окна редактирования профиля](testcases/TK-05.md) | 🟢 Passed | — |
-| 6 | [TK-06 — Отображение полей окна редактирования профиля](testcases/TK-06.md) | 🟢 Passed | — |
-| 7 | [TK-07 — Ошибка при вводе >200 символов в поле "Занятие"](testcases/TK-07.md) | 🔴 Failed | [SP1_TK7](REPLACE_LINK_SP1_TK7) |
-| 8 | [TK-08 — Ошибка при вводе <2 символов в поле "Имя"](testcases/TK-08.md) | 🔴 Failed | [SP1_TK8](REPLACE_LINK_SP1_TK8) |
-| 9 | [TK-09 — При пустом поле "Имя" кнопка "Сохранить" не активна](testcases/TK-09.md) | 🔵 Blocked | [SP1_TK3](REPLACE_LINK_SP1_TK3) / [SP1_TK4](REPLACE_LINK_SP1_TK4) |
-| 10 | [TK-10 — "Сохранить" не активна при невалидном "Занятие"](testcases/TK-10.md) | 🟢 Passed | — |
-| 11 | [TK-11 — "Сохранить" не активна при невалидном "Имя"](testcases/TK-11.md) | 🟢 Passed | — |
-| 12 | [TK-12 — Окно редактирования профиля по центру страницы](testcases/TK-12.md) | 🟢 Passed | — |
-| 13 | [TK-13 — При пустом поле "Занятие" кнопка "Сохранить" не активна](testcases/TK-13.md) | 🟢 Passed | — |
-| 14 | [TK-14 — Ошибка при вводе <2 символов в поле "Занятие"](testcases/TK-14.md) | 🔴 Failed | [SP1_TK14](REPLACE_LINK_SP1_TK14) |
-| 15 | [TK-15 — Ошибка при вводе >40 символов в поле "Имя"](testcases/TK-15.md) | 🔴 Failed | [SP1_TK15](REPLACE_LINK_SP1_TK15) |
-| 16 | [TK-16 — "Сохранить" активна при валидных данных](testcases/TK-16.md) | 🟢 Passed | — |
-| 17 | [TK-17 — Автоудаление пробелов при сохранении в конце полей](testcases/TK-17.md) | 🔵 Blocked | [SP1_TK2](REPLACE_LINK_SP1_TK2) |
+## Вывод
+Выявлены дефекты, влияющие на основной пользовательский сценарий редактирования профиля.  
+Релиз в текущем состоянии не рекомендован до исправления High-дефектов и повторного регресса.
+
+## Автор
+....
