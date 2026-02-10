@@ -13,7 +13,7 @@
 
 ## Прогон тест-кейсов (кликабельно)
 
-> В колонке “ID баг-репорта” стоят плейсхолдеры ссылок — замени `REPLACE_LINK_SP1_TK*` на свои ссылки.
+> В колонке “ID баг-репорта” указаны кликабельные ссылки на баг-репорты из ветки `sprint1-bugreports`.
 
 | № | Тест-кейс | Статус | ID баг-репорта / причина |
 |---:|---|---|---|
@@ -34,4 +34,5 @@
 | 15 | [TK-15 — Ошибка при вводе >40 символов в поле "Имя"](testcases/TK-15.md) | 🔴 Failed | [SP1_TK15](https://github.com/q1nn2/Sprint_1_yandex_mesto/blob/sprint1-bugreports/bugreports/SP1_TK15.md) |
 | 16 | [TK-16 — "Сохранить" активна при валидных данных](testcases/TK-16.md) | 🟢 Passed | — |
 | 17 | [TK-17 — Автоудаление пробелов при сохранении в конце полей](testcases/TK-17.md) | 🔵 Blocked | [SP1_TK2](https://github.com/q1nn2/Sprint_1_yandex_mesto/blob/sprint1-bugreports/bugreports/SP1_TK2.md) |
+
 
