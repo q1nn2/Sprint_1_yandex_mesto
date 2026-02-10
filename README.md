@@ -1,42 +1,37 @@
-# Mesto — Sprint 1 (Manual QA)
+﻿# Sprint 1 — Retest (Mesto)
 
-Репозиторий с результатами ручного тестирования веб-сервиса **Mesto**: прогон тест-кейсов, дефекты, выводы по готовым требованиям.
+Ретест дефектов, найденных другими тестировщиками (Sprint 1).  
+Цель: подтвердить исправления на тестовом стенде / переоткрыть дефекты при воспроизведении.
 
 ## Ссылки
-- Реализация: https://code.s3.yandex.net/qa/files/mesto/index.html
-- Требования: https://praktikum.notion.site/Mesto-9f2cfaa209734d1f8cfa0c0db3d3049f
+- Стенд: https://code.s3.yandex.net/qa/files/mesto/index.html
+- 🔁 Google Sheets — Retest (B1–B15): [открыть](https://docs.google.com/spreadsheets/d/1mqbbYBXJ6YJSuZtBK-uiI9E6lQDbB0JFdRBtRQpQNGg/edit?gid=379530441#gid=379530441)
 
-## Артефакты
-
-| Артефакт | Что внутри | Ссылка |
-|---|---|---|
-| ✅ Тест-кейсы (прогон) | Статусы **Passed/Failed/Blocked** | ✅ [Google Sheets — Test cases](https://docs.google.com/spreadsheets/d/13nzquQs9HWhjU0buZW-GD-v3z_A_sof28SgfXInC4kY/edit?gid=220888493#gid=220888493) |
-| 🐞 Баг-репорты | Шаги, ER/AR, окружение | 🐞 [Google Sheets — Bug reports](https://docs.google.com/spreadsheets/d/1yY5eNi8DMjGEhlcMzAAcT_nKohSqs_---3R_lMUR-n4/edit?gid=1186534874#gid=1186534874) |
-| 📁 Testcases (GitHub) | Структурированная версия тест-кейсов в ветке | 📁 [sprint1-testcases](https://github.com/q1nn2/Sprint_1_yandex_mesto/tree/sprint1-testcases) |
-| 📁 Bugreports (GitHub) | Структурированная версия баг-репортов в ветке | 📁 [sprint1-bugreports](https://github.com/q1nn2/Sprint_1_yandex_mesto/tree/sprint1-bugreports) |
-
-## Scope
-- Тип: регрессионное тестирование (Sprint 1)
-
-## Окружение
+## Окружение ретеста
 - OS: Windows 11 Pro 21H2
 - Browser: Google Chrome 144.0.7559.133
 
-## Итоги прогона
-📊 Total: **17** • 🟢 Passed: **8** • 🔴 Failed: **7** • 🔵 Blocked: **2** • ✅ Rate: **53% (8/15)**
+## Итоги ретеста
+📌 Total: **15** • ✅ Закрыт (исправлено): **10** • 🔁 Переоткрыт: **5**
 
-## Ключевые дефекты (High)
-- [SP1_TK2](https://github.com/q1nn2/Sprint_1_yandex_mesto/blob/sprint1-bugreports/bugreports/SP1_TK2.md) — данные профиля не сохраняются после нажатия “Сохранить”
-- [SP1_TK3](https://github.com/q1nn2/Sprint_1_yandex_mesto/blob/sprint1-bugreports/bugreports/SP1_TK3.md) — поле “Занятие” пустое при открытии редактирования
-- [SP1_TK4](https://github.com/q1nn2/Sprint_1_yandex_mesto/blob/sprint1-bugreports/bugreports/SP1_TK4.md) — поле “Имя” пустое при открытии редактирования
+---
 
-## Заблокированные проверки (Blocked)
-- [TK-09](https://github.com/q1nn2/Sprint_1_yandex_mesto/blob/sprint1-testcases/testcases/TK-09.md) — невозможно проверить неактивность “Сохранить” при пустом поле “Имя” (поля открываются пустыми) → связано с [SP1_TK3](https://github.com/q1nn2/Sprint_1_yandex_mesto/blob/sprint1-bugreports/bugreports/SP1_TK3.md) / [SP1_TK4](https://github.com/q1nn2/Sprint_1_yandex_mesto/blob/sprint1-bugreports/bugreports/SP1_TK4.md)
-- [TK-17](https://github.com/q1nn2/Sprint_1_yandex_mesto/blob/sprint1-testcases/testcases/TK-17.md) — невозможно проверить автоудаление пробелов, т.к. изменения не сохраняются → связано с [SP1_TK2](https://github.com/q1nn2/Sprint_1_yandex_mesto/blob/sprint1-bugreports/bugreports/SP1_TK2.md)
+## Реестр ретеста (кликабельно)
 
-## Вывод
-Выявлены дефекты, влияющие на основной пользовательский сценарий редактирования профиля.  
-Релиз в текущем состоянии не рекомендован до исправления High-дефектов и повторного регресса.
-
-## Автор
-Anatoly Elnikov
+| ID | Название | Приоритет | Статус после ретеста | Файл |
+|---|---|---|---|---|
+| B1 | При заходе на главную страницу появляется ошибка | Блокирующий | ✅ Закрыт | [retest/B1.md](retest/B1.md) |
+| B2 | Имя профиля наслаивается на описание занятия на главной странице | Критический | ✅ Закрыт | [retest/B2.md](retest/B2.md) |
+| B3 | Можно сохранить профиль с одним символом в поле "Имя" | Высокий | ✅ Закрыт | [retest/B3.md](retest/B3.md) |
+| B4 | Фотография карточки места открывается очень маленького размера | Высокий | ✅ Закрыт | [retest/B4.md](retest/B4.md) |
+| B5 | Нельзя поставить отметку "Нравится" месту | Критический | 🔁 Переоткрыт | [retest/B5.md](retest/B5.md) |
+| B6 | После редактирования профиля новые данные не применяются | Блокирующий | 🔁 Переоткрыт | [retest/B6.md](retest/B6.md) |
+| B7 | При нажатии на фотографию в карточке места нет описания места | Высокий | ✅ Закрыт | [retest/B7.md](retest/B7.md) |
+| B8 | Кнопка "+" не кликабельна | Блокирующий | 🔁 Переоткрыт | [retest/B8.md](retest/B8.md) |
+| B9 | Карточки мест не удаляются | Критический | 🔁 Переоткрыт | [retest/B9.md](retest/B9.md) |
+| B10 | Не закрывается форма редактирования профиля при клике на крестик | Высокий | ✅ Закрыт | [retest/B10.md](retest/B10.md) |
+| B11 | При добавлении новой фотографии она дублируется | Критический | 🔁 Переоткрыт | [retest/B11.md](retest/B11.md) |
+| B12 | Кнопка "Сохранить" в форме редактирования профиля все время не активная | Критический | ✅ Закрыт | [retest/B12.md](retest/B12.md) |
+| B13 | Не скроллятся галерея с карточками мест | Критический | ✅ Закрыт | [retest/B13.md](retest/B13.md) |
+| B14 | Карточка места после открытия не закрывается | Блокирующий | ✅ Закрыт | [retest/B14.md](retest/B14.md) |
+| B15 | При нажатии не открывается изображение карточки места | Критический | ✅ Закрыт | [retest/B15.md](retest/B15.md) |
