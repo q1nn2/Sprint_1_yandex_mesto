@@ -1,6 +1,6 @@
 # Sprint 1 — Test cases run (Mesto)
 
-Ветка содержит результаты прогона тест-кейсов за 1 спринт: **Passed / Failed / Blocked** и привязку к **ID баг-репортов** (ID сохранены как в Google Sheets: `SP1_TK*`).
+Ветка содержит результаты прогона тест-кейсов за 1 спринт: **Passed / Failed / Blocked** и привязку к **ID баг-репортов**.
 
 ## Ссылки
 - ✅ Google Sheets — Test cases: [открыть](https://docs.google.com/spreadsheets/d/13nzquQs9HWhjU0buZW-GD-v3z_A_sof28SgfXInC4kY/edit?gid=220888493#gid=220888493)
