@@ -1,7 +1,6 @@
 ﻿# Sprint 1 — Bug reports (Mesto)
 
 Ветка содержит баг-репорты по результатам ручного тестирования (Sprint 1).  
-Каждый дефект оформлен отдельным файлом в папке `bugreports/`.
 
 ## Ссылки
 - 🐞 Google Sheets — Bug reports: [открыть](https://docs.google.com/spreadsheets/d/1yY5eNi8DMjGEhlcMzAAcT_nKohSqs_---3R_lMUR-n4/edit?gid=1186534874#gid=1186534874)
