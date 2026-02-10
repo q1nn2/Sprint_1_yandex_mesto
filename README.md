@@ -16,15 +16,18 @@
 | 📁 Testcases (GitHub) | Структурированная версия тест-кейсов в ветке | 📁 [sprint1-testcases](https://github.com/q1nn2/Sprint_1_yandex_mesto/tree/sprint1-testcases) |
 | 📁 Bugreports (GitHub) | Структурированная версия баг-репортов в ветке | 📁 [sprint1-bugreports](https://github.com/q1nn2/Sprint_1_yandex_mesto/tree/sprint1-bugreports) |
 
+## Итоги
+📊 Regression: **17** • 🟢 Passed: **8** • 🔴 Failed: **7** • 🔵 Blocked: **2** • ✅ Rate: **53% (8/15)**  
+🔁 Retest: **15** • ✅ Closed: **10** • 🔁 Reopened: **5**
+
 ## Scope
-- Тип: регрессионное тестирование (Sprint 1)
+- Manual QA, Sprint 1:
+  - Regression test run
+  - Retest (verification / reopen)
 
 ## Окружение
 - OS: Windows 11 Pro 21H2
 - Browser: Google Chrome 144.0.7559.133
-
-## Итоги прогона
-📊 Total: **17** • 🟢 Passed: **8** • 🔴 Failed: **7** • 🔵 Blocked: **2** • ✅ Rate: **53% (8/15)**
 
 ## Ключевые дефекты (High)
 - [SP1_TK2](https://github.com/q1nn2/Sprint_1_yandex_mesto/blob/sprint1-bugreports/bugreports/SP1_TK2.md) — данные профиля не сохраняются после нажатия “Сохранить”
