@@ -30,6 +30,10 @@
 - [SP1_TK3](https://github.com/q1nn2/Sprint_1_yandex_mesto/blob/sprint1-bugreports/bugreports/SP1_TK3.md) — поле “Занятие” пустое при открытии редактирования
 - [SP1_TK4](https://github.com/q1nn2/Sprint_1_yandex_mesto/blob/sprint1-bugreports/bugreports/SP1_TK4.md) — поле “Имя” пустое при открытии редактирования
 
+## Заблокированные проверки (Blocked)
+- [TK-09](https://github.com/q1nn2/Sprint_1_yandex_mesto/blob/sprint1-testcases/testcases/TK-09.md) — невозможно проверить неактивность “Сохранить” при пустом поле “Имя” (поля открываются пустыми) → связано с [SP1_TK3](https://github.com/q1nn2/Sprint_1_yandex_mesto/blob/sprint1-bugreports/bugreports/SP1_TK3.md) / [SP1_TK4](https://github.com/q1nn2/Sprint_1_yandex_mesto/blob/sprint1-bugreports/bugreports/SP1_TK4.md)
+- [TK-17](https://github.com/q1nn2/Sprint_1_yandex_mesto/blob/sprint1-testcases/testcases/TK-17.md) — невозможно проверить автоудаление пробелов, т.к. изменения не сохраняются → связано с [SP1_TK2](https://github.com/q1nn2/Sprint_1_yandex_mesto/blob/sprint1-bugreports/bugreports/SP1_TK2.md)
+
 ## Вывод
 Выявлены дефекты, влияющие на основной пользовательский сценарий редактирования профиля.  
 Релиз в текущем состоянии не рекомендован до исправления High-дефектов и повторного регресса.
