@@ -6,7 +6,7 @@
 - 🐞 Google Sheets — Bug reports: [открыть](https://docs.google.com/spreadsheets/d/1yY5eNi8DMjGEhlcMzAAcT_nKohSqs_---3R_lMUR-n4/edit?gid=1186534874#gid=1186534874)
 - ✅ Google Sheets — Test cases: [открыть](https://docs.google.com/spreadsheets/d/13nzquQs9HWhjU0buZW-GD-v3z_A_sof28SgfXInC4kY/edit?gid=220888493#gid=220888493)
 
-## Реестр дефектов (кликабельно)
+## Реестр дефектов
 
 | ID | Заголовок | Приоритет | Статус | Доказательство |
 |---|---|---:|---|---|
