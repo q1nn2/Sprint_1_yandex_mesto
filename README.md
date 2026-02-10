@@ -1,38 +1,20 @@
-# Mesto — Sprint 1 (Manual QA)
+﻿# Sprint 1 — Bug reports (Mesto)
 
-Репозиторий с результатами ручного тестирования веб-сервиса **Mesto**: прогон тест-кейсов, дефекты, выводы по готовым требованиям.
+Ветка содержит баг-репорты по результатам ручного тестирования (Sprint 1).  
+Каждый дефект оформлен отдельным файлом в папке `bugreports/`.
 
 ## Ссылки
-- Реализация: https://code.s3.yandex.net/qa/files/mesto/index.html
-- Требования: https://praktikum.notion.site/Mesto-9f2cfaa209734d1f8cfa0c0db3d3049f
+- 🐞 Google Sheets — Bug reports: [открыть](https://docs.google.com/spreadsheets/d/1yY5eNi8DMjGEhlcMzAAcT_nKohSqs_---3R_lMUR-n4/edit?gid=1186534874#gid=1186534874)
+- ✅ Google Sheets — Test cases: [открыть](https://docs.google.com/spreadsheets/d/13nzquQs9HWhjU0buZW-GD-v3z_A_sof28SgfXInC4kY/edit?gid=220888493#gid=220888493)
 
-## Артефакты
+## Реестр дефектов (кликабельно)
 
-| Артефакт | Что внутри | Ссылка |
-|---|---|---|
-| ✅ Тест-кейсы (прогон) | Статусы **Passed/Failed/Blocked** | ✅ [Google Sheets — Test cases](https://docs.google.com/spreadsheets/d/13nzquQs9HWhjU0buZW-GD-v3z_A_sof28SgfXInC4kY/edit?gid=220888493#gid=220888493) |
-| 🐞 Баг-репорты | Шаги, ER/AR, окружение | 🐞 [Google Sheets — Bug reports](https://docs.google.com/spreadsheets/d/1yY5eNi8DMjGEhlcMzAAcT_nKohSqs_---3R_lMUR-n4/edit?gid=1186534874#gid=1186534874) |
-| 📁 Testcases (GitHub) | Структурированная версия тест-кейсов в репозитории | 📁 [sprint1-testcases](https://github.com/q1nn2/SPRINT1_YANDEX_MESTO/blob/main/sprint1-testcases) |
-| 📁 Bugreports (GitHub) | Структурированная версия баг-репортов в репозитории | 📁 [sprint1-bugreports](https://github.com/q1nn2/SPRINT1_YANDEX_MESTO/blob/main/sprint1-bugreports) |
-
-
-## Окружение
-- OS: Windows 11 Pro 21H2
-- Browser: Google Chrome 144.0.7559.133
-
-## Итоги прогона
-📊 Total: **17** • 🟢 Passed: **8** • 🔴 Failed: **7** • 🔵 Blocked: **2** • ✅ Rate: **53%**
-
-
-
-## Ключевые дефекты (High)
-- SP1_TK2 — данные профиля не сохраняются после нажатия “Сохранить”
-- SP1_TK3 — поле “Занятие” пустое при открытии редактирования
-- SP1_TK4 — поле “Имя” пустое при открытии редактирования
-
-## Вывод
-Выявлены дефекты, влияющие на основной пользовательский сценарий редактирования профиля.  
-Релиз в текущем состоянии не рекомендован до исправления High-дефектов и повторного регресса.
-
-## Автор
-....
+| ID | Заголовок | Приоритет | Статус | Доказательство |
+|---|---|---:|---|---|
+| [SP1_TK2](bugreports/SP1_TK2.md) | Не сохраняются данные в профиле после редактирования в приложение Mesto | Высокий | Открыт | https://skrinshoter.ru/vZxw3zsmBJV |
+| [SP1_TK3](bugreports/SP1_TK3.md) | В поле "Занятие" не подтягиваются данные с главной страницы при открытии редактирования профиля | Высокий | Открыт | https://skrinshoter.ru/sZxD7CL7P9X |
+| [SP1_TK4](bugreports/SP1_TK4.md) | В поле "Имя" не подтягиваются данные с главной страницы при открытии редактирования профиля | Высокий | Открыт | https://skrinshoter.ru/sZx6tgx6jjR |
+| [SP1_TK7](bugreports/SP1_TK7.md) | Не отображается сообщение об ошибке при вводе более 200 символов в поле «Занятие» | Низкий | Открыт | https://skrinshoter.ru/vZxIgVf7CyU |
+| [SP1_TK8](bugreports/SP1_TK8.md) | Некорректный текст сообщения об ошибке при вводе менее допустимого количества символов в поле "Имя" | Низкий | Открыт | https://skrinshoter.ru/sZxOZogMsFa |
+| [SP1_TK14](bugreports/SP1_TK14.md) | Некорректный текст сообщения об ошибке при вводе менее допустимого количества символов в поле "Занятие" | Низкий | Открыт | https://skrinshoter.ru/sZxuACkjqeE |
+| [SP1_TK15](bugreports/SP1_TK15.md) | Не отображается сообщение об ошибке при вводе более 40 символов в поле «Имя» | Низкий | Открыт | https://skrinshoter.ru/vZxmQccHvQX |
