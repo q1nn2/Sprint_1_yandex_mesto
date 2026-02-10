@@ -8,7 +8,7 @@
 
 ## Артефакты
 
-- ✅ **Тест-кейсы (прогон)** — статусы Passed/Failed/Blocked  
+- ✅ **Тест-кейсы** — статусы Passed/Failed/Blocked  
   - ✅ [Google Sheets — Test cases](https://docs.google.com/spreadsheets/d/13nzquQs9HWhjU0buZW-GD-v3z_A_sof28SgfXInC4kY/edit?gid=220888493#gid=220888493)  
   - 📁 [sprint1-testcases (GitHub)](https://github.com/q1nn2/Sprint_1_yandex_mesto/tree/sprint1-testcases)
 
