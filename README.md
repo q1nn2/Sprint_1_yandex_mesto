@@ -5,10 +5,12 @@
 ![Manual QA](https://img.shields.io/badge/Type-Manual%20QA-blue)
 ![Scope](https://img.shields.io/badge/Scope-Regression%20%2B%20Retest-orange)
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+![Focus](https://img.shields.io/badge/Focus-Profile%20%26%20Cards-purple)
+![Bugs](https://img.shields.io/badge/Bugs-15_total%20%7C%205_reopened-red)
 
 ---
 
-## Содержание
+## 🧭 Содержание
 
 - [Описание](#описание)
 - [Ссылки](#ссылки)
@@ -22,7 +24,7 @@
 
 ---
 
-## Описание
+## 📌 Описание
 
 Цель работы — оценить качество реализации ключевых пользовательских сценариев:
 
@@ -34,7 +36,7 @@
 
 ---
 
-## Ссылки
+## 🔗 Ссылки
 
 - **Реализация (тестируемый стенд)**:  
   `https://code.s3.yandex.net/qa/files/mesto/index.html`
@@ -43,22 +45,22 @@
 
 ---
 
-## Артефакты
+## 🧪 Артефакты
 
-| Артефакт       | Формат          | Расположение              |
-|----------------|-----------------|---------------------------|
-| Тест‑кейсы     | Google Sheets   | [Test cases](https://docs.google.com/spreadsheets/d/13nzquQs9HWhjU0buZW-GD-v3z_A_sof28SgfXInC4kY/edit?gid=220888493#gid=220888493) |
-| Тест‑кейсы     | GitHub          | `sprint1-testcases/`      |
-| Баг‑репорты    | Google Sheets   | [Bug reports](https://docs.google.com/spreadsheets/d/1yY5eNi8DMjGEhlcMzAAcT_nKohSqs_---3R_lMUR-n4/edit?gid=1186534874#gid=1186534874) |
-| Баг‑репорты    | GitHub          | `sprint1-bugreports/`     |
-| Ретест (B1–B15)| Google Sheets   | [Retest](https://docs.google.com/spreadsheets/d/1mqbbYBXJ6YJSuZtBK-uiI9E6lQDbB0JFdRBtRQpQNGg/edit?gid=379530441#gid=379530441) |
-| Ретест         | GitHub          | `sprint1-retest/`         |
+| Артефакт          | Формат        | Расположение |
+|-------------------|--------------|--------------|
+| ✅ Тест‑кейсы     | Google Sheets | [Google Sheets — Test cases](https://docs.google.com/spreadsheets/d/13nzquQs9HWhjU0buZW-GD-v3z_A_sof28SgfXInC4kY/edit?gid=220888493#gid=220888493) |
+| ✅ Тест‑кейсы     | GitHub        | [sprint1-testcases](https://github.com/q1nn2/Sprint_1_yandex_mesto/tree/sprint1-testcases) |
+| 🐞 Баг‑репорты    | Google Sheets | [Google Sheets — Bug reports](https://docs.google.com/spreadsheets/d/1yY5eNi8DMjGEhlcMzAAcT_nKohSqs_---3R_lMUR-n4/edit?gid=1186534874#gid=1186534874) |
+| 🐞 Баг‑репорты    | GitHub        | [sprint1-bugreports](https://github.com/q1nn2/Sprint_1_yandex_mesto/tree/sprint1-bugreports) |
+| 🔁 Ретест (B1–B15)| Google Sheets | [Google Sheets — Retest](https://docs.google.com/spreadsheets/d/1mqbbYBXJ6YJSuZtBK-uiI9E6lQDbB0JFdRBtRQpQNGg/edit?gid=379530441#gid=379530441) |
+| 🔁 Ретест         | GitHub        | [sprint1-retest](https://github.com/q1nn2/Sprint_1_yandex_mesto/tree/sprint1-retest) |
 
 > Артефакты содержат шаги воспроизведения, ER/AR, окружение, а также связь с тест‑кейсами и статусами.
 
 ---
 
-## Ключевые дефекты
+## 🚨 Ключевые дефекты
 
 Основные (High) дефекты, влияющие на базовый пользовательский сценарий:
 
@@ -70,7 +72,7 @@
 
 ---
 
-## Заблокированные проверки
+## ⛔ Заблокированные проверки
 
 Часть проверок не может быть выполнена из‑за уже существующих дефектов:
 
@@ -84,7 +86,7 @@
 
 ---
 
-## Итоги
+## 📊 Итоги
 
 ### Регрессия
 
@@ -106,21 +108,21 @@
 
 ---
 
-## Окружение
+## 💻 Окружение
 
 - **OS**: Windows 11 Pro 21H2  
 - **Browser**: Google Chrome 144.0.7559.133
 
 ---
 
-## Вывод
+## ✅ Вывод
 
 > **Вывод:** выявлены дефекты, критично влияющие на основной сценарий редактирования профиля и валидацию полей.  
 > В текущем состоянии **релиз не рекомендован** до исправления High‑дефектов и повторного регрессионного прогона.
 
 ---
 
-## Автор
+## 👤 Автор
 
 **Anatoly Elnikov**  
 Manual QA Engineer
