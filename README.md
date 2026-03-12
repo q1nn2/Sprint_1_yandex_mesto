@@ -1,62 +1,126 @@
-# Mesto — Sprint 1
+# Mesto — Sprint 1 (Manual QA)
+
+Ручное тестирование веб‑сервиса **Mesto**: прогон регрессионных тест‑кейсов, анализ найденных дефектов и ретест исправлений.
+
+![Manual QA](https://img.shields.io/badge/Type-Manual%20QA-blue)
+![Scope](https://img.shields.io/badge/Scope-Regression%20%2B%20Retest-orange)
+![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
+
+---
+
+## Содержание
+
+- [Описание](#описание)
+- [Ссылки](#ссылки)
+- [Артефакты](#артефакты)
+- [Ключевые дефекты](#ключевые-дефекты)
+- [Заблокированные проверки](#заблокированные-проверки)
+- [Итоги](#итоги)
+- [Окружение](#окружение)
+- [Вывод](#вывод)
+- [Автор](#автор)
+
+---
 
 ## Описание
 
-Ручное тестирование веб‑сервиса **Mesto**: прогон тест-кейсов, анализ найденных дефектов и выводы по готовым требованиям.
+Цель работы — оценить качество реализации ключевых пользовательских сценариев:
 
-Цель работы — оценить качество реализации ключевых пользовательских сценариев (просмотр и редактирование профиля, работа с карточками) и зафиксировать текущее состояние продукта перед релизом.
+- **Просмотр профиля пользователя**
+- **Редактирование профиля**
+- **Работа с карточками (просмотр, лайки и т.д.)**
+
+На основе результатов регрессионного прогона и ретеста сформированы выводы о готовности продукта к релизу.
+
+---
 
 ## Ссылки
 
-- Реализация: https://code.s3.yandex.net/qa/files/mesto/index.html
-- Требования: https://praktikum.notion.site/Mesto-9f2cfaa209734d1f8cfa0c0db3d3049f
+- **Реализация (тестируемый стенд)**:  
+  `https://code.s3.yandex.net/qa/files/mesto/index.html`
+- **Требования к продукту**:  
+  `https://praktikum.notion.site/Mesto-9f2cfaa209734d1f8cfa0c0db3d3049f`
+
+---
 
 ## Артефакты
 
-- ✅ **Тест-кейсы** — статусы Passed/Failed/Blocked  
-  - ✅ [Google Sheets — Test cases](https://docs.google.com/spreadsheets/d/13nzquQs9HWhjU0buZW-GD-v3z_A_sof28SgfXInC4kY/edit?gid=220888493#gid=220888493)  
-  - 📁 [sprint1-testcases (GitHub)](https://github.com/q1nn2/Sprint_1_yandex_mesto/tree/sprint1-testcases)
+| Артефакт       | Формат          | Расположение              |
+|----------------|-----------------|---------------------------|
+| Тест‑кейсы     | Google Sheets   | [Test cases](https://docs.google.com/spreadsheets/d/13nzquQs9HWhjU0buZW-GD-v3z_A_sof28SgfXInC4kY/edit?gid=220888493#gid=220888493) |
+| Тест‑кейсы     | GitHub          | `sprint1-testcases/`      |
+| Баг‑репорты    | Google Sheets   | [Bug reports](https://docs.google.com/spreadsheets/d/1yY5eNi8DMjGEhlcMzAAcT_nKohSqs_---3R_lMUR-n4/edit?gid=1186534874#gid=1186534874) |
+| Баг‑репорты    | GitHub          | `sprint1-bugreports/`     |
+| Ретест (B1–B15)| Google Sheets   | [Retest](https://docs.google.com/spreadsheets/d/1mqbbYBXJ6YJSuZtBK-uiI9E6lQDbB0JFdRBtRQpQNGg/edit?gid=379530441#gid=379530441) |
+| Ретест         | GitHub          | `sprint1-retest/`         |
 
-- 🐞 **Баг-репорты** — шаги, ER/AR, окружение  
-  - 🐞 [Google Sheets — Bug reports](https://docs.google.com/spreadsheets/d/1yY5eNi8DMjGEhlcMzAAcT_nKohSqs_---3R_lMUR-n4/edit?gid=1186534874#gid=1186534874)  
-  - 📁 [sprint1-bugreports (GitHub)](https://github.com/q1nn2/Sprint_1_yandex_mesto/tree/sprint1-bugreports)
+> Артефакты содержат шаги воспроизведения, ER/AR, окружение, а также связь с тест‑кейсами и статусами.
 
-- 🔁 **Retest (Sprint 1)** — результаты ретеста дефектов (B1–B15)  
-  - 🔁 [Google Sheets — Retest](https://docs.google.com/spreadsheets/d/1mqbbYBXJ6YJSuZtBK-uiI9E6lQDbB0JFdRBtRQpQNGg/edit?gid=379530441#gid=379530441)  
-  - 📁 [sprint1-retest (GitHub)](https://github.com/q1nn2/Sprint_1_yandex_mesto/tree/sprint1-retest)
+---
 
-## Ключевые дефекты (High)
+## Ключевые дефекты
 
-- [SP1_TK2](https://github.com/q1nn2/Sprint_1_yandex_mesto/blob/sprint1-bugreports/bugreports/SP1_TK2.md) — данные профиля не сохраняются после нажатия “Сохранить”
-- [SP1_TK3](https://github.com/q1nn2/Sprint_1_yandex_mesto/blob/sprint1-bugreports/bugreports/SP1_TK3.md) — поле “Занятие” пустое при открытии редактирования
-- [SP1_TK4](https://github.com/q1nn2/Sprint_1_yandex_mesto/blob/sprint1-bugreports/bugreports/SP1_TK4.md) — поле “Имя” пустое при открытии редактирования
+Основные (High) дефекты, влияющие на базовый пользовательский сценарий:
 
-## Заблокированные проверки (Blocked)
+| ID        | Описание                                              | Влияние                                   |
+|-----------|--------------------------------------------------------|-------------------------------------------|
+| SP1_TK2   | Данные профиля не сохраняются после нажатия «Сохранить» | Блокирует редактирование профиля         |
+| SP1_TK3   | Поле «Занятие» открывается пустым                      | Некорректный UX, мешает проверкам валидации |
+| SP1_TK4   | Поле «Имя» открывается пустым                          | Некорректный UX, мешает проверкам валидации |
 
-- [TK-09](https://github.com/q1nn2/Sprint_1_yandex_mesto/blob/sprint1-testcases/testcases/TK-09.md) — невозможно проверить неактивность “Сохранить” при пустом поле “Имя” (поля открываются пустыми) → связано с [SP1_TK3](https://github.com/q1nn2/Sprint_1_yandex_mesto/blob/sprint1-bugreports/bugreports/SP1_TK3.md) / [SP1_TK4](https://github.com/q1nn2/Sprint_1_yandex_mesto/blob/sprint1-bugreports/bugreports/SP1_TK4.md)
-- [TK-17](https://github.com/q1nn2/Sprint_1_yandex_mesto/blob/sprint1-testcases/testcases/TK-17.md) — невозможно проверить автоудаление пробелов, т.к. изменения не сохраняются → связано с [SP1_TK2](https://github.com/q1nn2/Sprint_1_yandex_mesto/blob/sprint1-bugreports/bugreports/SP1_TK2.md)
+---
+
+## Заблокированные проверки
+
+Часть проверок не может быть выполнена из‑за уже существующих дефектов:
+
+- **TK‑09** — невозможно проверить неактивность кнопки «Сохранить» при пустом поле «Имя»,  
+  так как поля редактирования открываются пустыми  
+  → связано с `SP1_TK3` / `SP1_TK4`.
+
+- **TK‑17** — невозможно проверить автоудаление пробелов в полях профиля,  
+  так как изменения не сохраняются  
+  → связано с `SP1_TK2`.
+
+---
 
 ## Итоги
 
-📊 Regression: **17** • 🟢 Passed: **8** • 🔴 Failed: **7** • 🔵 Blocked: **2** • ✅ Rate: **53% (8/15)**  
-🔁 Retest: **15** • ✅ Closed: **10** • 🔁 Reopened: **5**
+### Регрессия
 
-## Scope
+| Метрика          | Значение |
+|------------------|----------|
+| Всего тестов     | **17**   |
+| Passed           | **8**    |
+| Failed           | **7**    |
+| Blocked          | **2**    |
+| Итоговый rate    | **53% (8/15)** |
 
-- Manual QA, Sprint 1:
-  - Regression test run
-  - Retest (verification / reopen)
+### Ретест
+
+| Метрика          | Значение |
+|------------------|----------|
+| Всего дефектов   | **15**   |
+| Closed           | **10**   |
+| Reopened         | **5**    |
+
+---
 
 ## Окружение
 
-- OS: Windows 11 Pro 21H2
-- Browser: Google Chrome 144.0.7559.133
+- **OS**: Windows 11 Pro 21H2  
+- **Browser**: Google Chrome 144.0.7559.133
+
+---
 
 ## Вывод
 
-Выявлены дефекты, влияющие на основной пользовательский сценарий редактирования профиля.  
-Релиз в текущем состоянии не рекомендован до исправления High-дефектов и повторного регресса.
+> **Вывод:** выявлены дефекты, критично влияющие на основной сценарий редактирования профиля и валидацию полей.  
+> В текущем состоянии **релиз не рекомендован** до исправления High‑дефектов и повторного регрессионного прогона.
+
+---
 
 ## Автор
 
-Anatoly Elnikov
+**Anatoly Elnikov**  
+Manual QA Engineer
