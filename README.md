@@ -50,11 +50,11 @@
 | Артефакт          | Формат        | Расположение |
 |-------------------|--------------|--------------|
 | ✅ Тест‑кейсы     | Google Sheets | [Google Sheets — Test cases](https://docs.google.com/spreadsheets/d/13nzquQs9HWhjU0buZW-GD-v3z_A_sof28SgfXInC4kY/edit?gid=220888493#gid=220888493) |
-| ✅ Тест‑кейсы     | GitHub        | [sprint1-testcases](https://github.com/q1nn2/Sprint_1_yandex_mesto/tree/sprint1-testcases) |
+| ✅ Тест‑кейсы     | GitHub        | [testcases](https://github.com/q1nn2/yandex_mesto/tree/testcases) |
 | 🐞 Баг‑репорты    | Google Sheets | [Google Sheets — Bug reports](https://docs.google.com/spreadsheets/d/1yY5eNi8DMjGEhlcMzAAcT_nKohSqs_---3R_lMUR-n4/edit?gid=1186534874#gid=1186534874) |
-| 🐞 Баг‑репорты    | GitHub        | [sprint1-bugreports](https://github.com/q1nn2/Sprint_1_yandex_mesto/tree/sprint1-bugreports) |
+| 🐞 Баг‑репорты    | GitHub        | [bugreports](https://github.com/q1nn2/yandex_mesto/tree/bugreports) |
 | 🔁 Ретест (B1–B15)| Google Sheets | [Google Sheets — Retest](https://docs.google.com/spreadsheets/d/1mqbbYBXJ6YJSuZtBK-uiI9E6lQDbB0JFdRBtRQpQNGg/edit?gid=379530441#gid=379530441) |
-| 🔁 Ретест         | GitHub        | [sprint1-retest](https://github.com/q1nn2/Sprint_1_yandex_mesto/tree/sprint1-retest) |
+| 🔁 Ретест         | GitHub        | [retest](https://github.com/q1nn2/yandex_mesto/tree/retest) |
 
 > Артефакты содержат шаги воспроизведения, ER/AR, окружение, а также связь с тест‑кейсами и статусами.
 
